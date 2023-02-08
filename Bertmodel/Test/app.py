@@ -203,7 +203,7 @@ def get_prediction(str):
 
 def get_response(message): 
   intent = get_prediction(message)
-  with open(r"intents.json", encoding='utf-8') as file:
+  with open(r"veri.json", encoding='utf-8') as file:
     data = json.load(file)
   for i in data['intents']: 
     if i["tag"] == intent:
