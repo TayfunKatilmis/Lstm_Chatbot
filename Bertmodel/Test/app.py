@@ -59,7 +59,6 @@ train_data = TensorDataset(train_seq, train_mask, train_y)
 
 train_sampler = RandomSampler(train_data)
 
-# DataLoader for train set
 train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=batch_size)
 
 class BERT_Arch(nn.Module):
@@ -67,20 +66,15 @@ class BERT_Arch(nn.Module):
        super(BERT_Arch, self).__init__()
        self.bert = bert 
       
-       # dropout layer
        self.dropout = nn.Dropout(0.2)
       
-       # relu activation function
        self.relu =  nn.ReLU()
-       # dense layer
        self.fc1 = nn.Linear(768,512)
        self.fc2 = nn.Linear(512,256)
        self.fc3 = nn.Linear(256,41)
-       #softmax activation function
        self.softmax = nn.LogSoftmax(dim=1)
-       #define the forward pass
+
    def forward(self, sent_id, mask):
-      #pass the inputs to the model  
       cls_hs = self.bert(sent_id, attention_mask=mask)[0][:,0]
       x = self.fc1(cls_hs)
       x = self.relu(x)
@@ -96,95 +90,64 @@ class BERT_Arch(nn.Module):
       x = self.softmax(x)
       return x
 
-# freeze all the parameters. This will prevent updating of model weights during fine-tuning.
 for param in bert.parameters():
       param.requires_grad = False
 model = BERT_Arch(bert)
-# push the model to GPU
+
 model = model.to(device)
 from torchinfo import summary
 summary(model)
 
 
 from transformers import AdamW
-# define the optimizer
 optimizer = AdamW(model.parameters(), lr = 1e-3)
 
 from sklearn.utils.class_weight import compute_class_weight
-#compute the class weights
 class_wts = compute_class_weight('balanced', np.unique(train_labels), train_labels)
 
 weights= torch.tensor(class_wts,dtype=torch.float)
 
 weights = weights.to(device)
 
-# loss function
 cross_entropy = nn.NLLLoss(weight=weights) 
-#weight=weights
-
-
-# empty lists to store training and validation loss of each epoch
 train_losses=[]
 train_accur=[]
-# number of training epochs
 epochs = 500
-# We can also use learning rate scheduler to achieve better results
 from torch.optim import lr_scheduler 
 lr_sch = lr_scheduler.StepLR(optimizer, step_size=100, gamma=0.1)
 
-# function to train the model
 def train():
   
   model.train()
   total_loss = 0
-  total_Acc= 0
-  # empty list to save model predictions
   total_preds=[]
   
-  # iterate over batches
   for step,batch in enumerate(train_dataloader):
     
-    # progress update after every 50 batches.
     if step % 50 == 0 and not step == 0:
       print('  Batch {:>5,}  of  {:>5,}.'.format(step,    len(train_dataloader)))
-    # push the batch to gpu
     batch = [r.to(device) for r in batch] 
     sent_id, mask, labels = batch
-    # get model predictions for the current batch
     preds = model(sent_id, mask)
     
-    # compute the loss between actual and predicted values
     loss = cross_entropy(preds, labels)
     
-    # add on to the total loss
     total_loss = total_loss + loss.item()
-    # backward pass to calculate the gradients
     loss.backward()
-    # clip the the gradients to 1.0. It helps in preventing the    exploding gradient problem
     torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
     
-    # update parameters
     optimizer.step()
-    # clear calculated gradients
     optimizer.zero_grad()
   
-    # We are not using learning rate scheduler as of now
-    # lr_sch.step()
-    # model predictions are stored on GPU. So, push it to CPU
     preds=preds.detach().cpu().numpy()
-    # append the model predictions
     total_preds.append(preds)
-    # compute the training loss of the epoch
     avg_loss = total_loss / len(train_dataloader)
     avg_acc=1-avg_loss
     
     
   
-# predictions are in the form of (no. of batches, size of batch, no. of classes).
-# reshape the predictions in form of (number of samples, no. of classes)
     total_preds  = np.concatenate(total_preds, axis=0)
     
-#returns the loss and predictions
     return avg_loss, total_preds,avg_acc   
 
 for epoch in range(epochs):
@@ -194,10 +157,8 @@ for epoch in range(epochs):
     #train model
     train_loss, _, train_acc  = train()
     
-    # append training and validation loss
     train_losses.append(train_loss)
     train_accur.append(train_acc)
-    # it can make your experiment reproducible, similar to set  random seed to all options where there needs a random seed.
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     print(f'\nTraining Loss: {train_loss:.3f}')
