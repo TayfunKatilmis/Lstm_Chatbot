@@ -198,7 +198,7 @@
         {
             "tag": "Mining nasıl yapılır",
             "responses": [
-                "Herkese açık bir sistem olduğu için dileyen herkes BTC mining yapabilir. Ancak yukarıda söylediğimiz gibi bu işten gelir elde etmek için elektrik tüketiminin ucuz olduğu bir yerde olmanız ve birden fazla ekran kartına veya ASIC cihazlara sahip olmanız gerekiyor.Günümüzde insanlar gerekli donanımı elde ettikten sonra mining havuzlarına dahil olarak diğer insanlara beraber bu işlemi yapıyor ve sisteme yaptıkları katkı kadarınca BTC kazanıyor."
+                "Herkese açık bir sistem olduğu için dileyen herkes BTC mining yapabilir. Bu işten gelir elde etmek için elektrik tüketiminin ucuz olduğu bir yerde olmanız ve birden fazla ekran kartına veya ASIC cihazlara sahip olmanız gerekiyor.Günümüzde insanlar gerekli donanımı elde ettikten sonra mining havuzlarına dahil olarak diğer insanlara beraber bu işlemi yapıyor ve sisteme yaptıkları katkı kadarınca BTC kazanıyor."
             ]
         },
         {
@@ -313,6 +313,172 @@
             "tag": "WAVES",
             "responses": [
                 "Waves, kendini 'özel blok zinciri token operasyonlarına odaklanan merkezi olmayan bir blok zinciri platformu' olarak tanımlayan bir kripto para birimidir.  Teknik Makale: https://blog.wavesplatform.com/waves-whitepaper-164dd6ca6a23    Resmi Sitesi: https://waves.tech/"
+            ]
+        },
+        {
+            "tag": "nasıl Bitcoin alma",
+            "responses": [
+                "Kripto paraları satın almak için yurtiçi ve yurtdışında hizmet veren borsaları tercih edebilirsiniz. Anlık fiyatların borsadan borsaya değişkenlik gösterdiğini unutmayın. Ayrıca kripto para borsalarının tümünde BTC olmasına rağmen altcoin’lerde durum farklılık gösteriyor. O nedenle eğer BTC değil de altcoin’lere yatırım yapmak istiyorsanız o coin’in seçtiğiniz borsada olup olmadığını kontrol etmeyi unutmayın"
+            ]
+        },
+        {
+            "tag": "Nereden Bitcoin",
+            "responses": [
+                "Ülkemizde güvenilir ve en çok kullanılan borsalar BTCTurk, Paribu ve Koineks olarak sıralanıyor. Bu borsalardan Bitcoin haricinde Ethereum, Litecoin ve Dash gibi farklı kripto paraları da satın alabiliyorsunuz. Daha çok altcoin’e ulaşmak ve al-sat yapmak isterseniz de en çok kullanılan yurtdışı borsaları arasında Binance, Kucoin, Bittrex gibi isimler bulunuyor"
+            ]
+        },
+        {
+            "tag": "Bitcoin sayısı",
+            "responses": [
+                "Bitcoin 21 milyon adetle sınırlı. Şu anda ise bunun yaklaşık %80‘i yani 17 milyonu çıkarılmış durumda. Ayrıca her coin’in birbirinden farklı adette olduğunu belirtelim. Ayrıca bazı coin’ler madenciliğe açık bir yapıda gelirken, bazıları mine edilemiyor."
+            ]
+        },
+        {
+            "tag": "Bitcoin Cash",
+            "responses": ["Bitcoin Cash bir Bitcoin forku. Türkçe’ye “çatallaşma” olarak çevrilen “fork” terimi, bir coinin kaynak kodlarından yola çıkarak farklı bir yolda ilerleyen yeni bir proje oluşturulmasına verilen isim. Ayrıca blok zincirinin bölünerek geliştirilmesi Hard Fork, bölünmeden geliştirilmesi ise Soft Fork olarak adlandırılır. BTC Cash bir Hard Fork‘tur."]
+        },
+        {
+            "tag": "SaklamaKripto",
+            "responses": [
+                "Kripto paraları, flash bellek görünümünde olan soğuk cüzdanlara aktararak saklayabilirsiniz. Ayrıca sahip olduğunuz kripto paraları, satın aldığınız aracı kurumdaki hesabınızda ya da mining yaptığınız cihazda da saklama şansına sahipsiniz. Fakat daha güvenli bir deneyim için şifreyle korunmuş soğuk cüzdanları kullanmalısınız. Elbette soğuk cüzdanı kaybetmeyeceğiniz bir yerde saklamalı, şifresini de unutmamalısınız.                 "
+            ]
+        },
+        {
+            "tag": "Fizikselkarşılık",
+            "responses": [
+                "Hayır, yok. Maalesef altın ya da gümüş alır gibi 'Benim hesabımda şu kadar Bitcoin var, çekmeye geldim.' dediğinizde bir varlık alamıyorsunuz. Değeri anlık talebe bağlı olarak değişen kripto paranızı bozdurduğunuzda TL, Dolar, Euro gibi para birimlerine çevirebilir ve kağıt para olarak elinize alabilirsiniz.                 "
+            ]
+        },
+        {
+            "tag": "Madencilik",
+            "responses": [
+                "Kriptopara madenciliği, en temel tanımıyla, özel yazılım ve donanımlara sahip cihazların, karmaşık problemleri çözerek kriptopara transfer işlemlerini onaylaması ve bunun sonucunda yeni üretilen kriptopara ile ödüllendirilmesidir. Teoride, bir bilgisayara ve ‌internete sahip olan herkes madencilik yapabilmektedir. Cüzdanlar arasında yapılan transferler, çoğu blokzincirinde onaylanmadan önce bir işlem havuzuna (mempool) aktarılır. Ardından bu işlemler bir araya getirilerek bir blok oluşturulur. Bu bloklar, ağa bağlı cihazlar tarafından doğrulanarak onaylandıktan sonra blokzincirine yazılır. Kriptopara madencileri, transfer işlemlerini doğrular, onaylar ve blokzincirinin bir kopyasını saklar."
+            ]
+        },
+        {
+            "tag": "madencilikyapmak",
+            "responses": [
+                "Kriptopara madenciliği yapmanın günümüzde pek çok yöntemi vardır. Kârlılık, maliyet ve zorluk bakımından bu yöntemleri ayırmak mümkündür."
+            ]
+        },
+        {
+            "tag": "ASIC madenciliği",
+            "responses": [
+                "ASIC, yani Uygulamaya Özel Entegre Devreler, kriptopara madenciliği odaklı sistemlerdir. İçlerindeki yazılım ve özel donanımlar, bu devreleri kriptopara madenciliği gerçekleştirmek üzere özel birer donanım haline getirmektedir. Çok sayıda işlemciden oluşan ASIC cihazlar yüksek hesaplama kapasitesine sahip olmalarına rağmen çok fazla enerji tüketmektedir. Bu nedenle ASIC cihazlar ile madencilik yapan madencilerin elektrik tüketimini karşılayacak güçlü elektrik altyapılarına ihtiyacı vardır.Bitcoin, Litecoin gibi İş Kanıtı (Proof of Work) madenciliği tabanlı kriptoparalar yüksek hesaplama kapasitesi ihtiyacı nedeniyle artık sadece ASIC madencilik cihazları ile üretilebilmektedir."
+            ]
+        },
+        {
+            "tag": "GPU Madenciliği",
+            "responses": [
+                "Bilgisayarların ekran kartlarının işlemcileri Grafik İşlemci Birimi (GPU) olarak adlandırılmaktadır. GPU madenciliği de, ekran kartlarının işlemcileri hesaplama yapılarak işlemlerin doğrulandığı madencilik türüdür. Grafik kartlarının işlemcileri, bilgisayarların işlemcilerine göre çok daha güçlüdür ve hesaplama odaklıdır. Bu nedenle Ethereum, Zcash gibi İş Kanıtı madenciliği tabanlı kriptoparaların işlemlerinin doğrulanmasında grafik kartları kullanılmaktadır.Ekran kartları, ASIC cihazlara göre çok da uygun fiyatlıdır. Ancak bununla birlikte, madenciler, birden fazla ekran kartını bir araya getirerek 'Rig' adı verilen birden fazla ekran kartının bir araya getirilmesiyle oluşan cihazlar kullanmaktadır."
+            ]
+        },
+        {
+            "tag": "CPU madencilik",
+            "responses": [
+                "CPU, yani merkezi işlem birimi (işlemci) ile de madencilik yapmak mümkündür. Evlerde kullanılan bilgisayarlara bir madencilik yazılımı kurarak kolaylıkla ‌CPU madenciliği yapılabilmektedir.Ancak günümüzde bu yöntem, diğer yöntemlere göre çok düşük performanslı olması sebebiyle artık neredeyse hiç kullanılmamaktadır. Popüler kriptoparaların büyük çoğunluğu için işlemcilerle madencilik yapmak imkansız hale gelmiştir.Bilgisayar işlemcileri artık iş kanıtı madenciliğinde kullanılmak yerine, Hisse Kanıtı (Proof of Stake - PoS) madenciliğinde kullanılmaktadır. Bu madencilik türünde, yüksek hesaplama gücüne gereksinim duyulmadığı için madencilik yazılımının çalışır halde olması ve cüzdanda gelir elde etmeye yeterli miktarda kriptopara olması yeterlidir."
+            ]
+        },
+        {
+            "tag": "Bulut madenciliği",
+            "responses": [
+                "Bulut madenciliği, kriptopara madenciliği yapmak isteyen ancak yeterli donanım, zaman, bilgi birikimi ya da sermayesi olmayanlar için sunulan alternatif bir madencilik hizmetidir.Madencilik yapmak isteyen kullanıcılar, bulut madencilik servislerinden işlemci gücü kiralar ve bu işlem gücünü, istedikleri madencilik havuzuna yönlendirerek kriptopara madenciliği yapabilirler.Bulut madencilik servisleri, dönemlik kontratlar ile farklı kriptopara madencilik türleri için işlemci gücü kiralamaktadır. Donanım, yazılım, soğutma, bakım, yazılım gibi farklı maliyetleri göz önünde bulundurarak kullanıcılarla çeşitli kontratlar sunmaktadır. İşletme maliyeti için ücret ödenen kontratlar daha pahalı görünse de madencilik gelirleri daha yüksektir. Daha düşük ücretli ve işletme maliyetlerinin bir kısmının madencilik gelirleriyle karşılandığı kontrat paketlerinde ise, madencilik gelirleri daha da azalmaktadır.Diğer madencilik türlerine göre daha düşük maliyetli görünmesine rağmen bulut madencilik yöntemini tercih eden kullanıcıların kar edebilmesi her geçen gün daha da zorlaşmaktadır."
+            ]
+        },
+        {
+            "tag": "NFT nedir",
+            "responses": [
+                "NFT veya Türkçe adıyla Nitelikli Fikri Tapu, kripto para dünyasında kullanılan bir terim olsa da bir kripto paradan çok daha fazlası aslında. Herhangi bir dijital sanat eseri, video, görsel, hatta müzik NFT olabilir. Mona Lisa tablosu üzerinden bir örnekle açıklayalım... Da Vinci’nin orijinal tablosu Paris’teki Louvre Müzesi’nde yer alıyor ve bizler bu eserin yalnızca kopyalarına sahip olabiliriz. NFT’lerin işleyişi de biraz buna benziyor. NFT’ler eşi olmayan orijinal eserlerdir. Bu eserler el değiştirebilir ama yalnızca orijinal esere sahip olan kişi kazanç sağlar."
+            ]
+        },
+        {
+            "tag": "Airdrop",
+            "responses": [
+                "Bazı cüzdanlara (NFT wallet) kimi zaman ücretsiz bir şekilde coin veya token gönderme işlemine airdrop deniyor. Bunun amacı ise kısaca şöyle açıklanabilir: Halihazırda NFT sahibi olan kişilere airdrop yaparak daha güçlü bir topluluk inşa ediliyor ve var olan NFT’lerin değeri artırılıyor. Airdrop aynı zamanda talebi artırma, PR yapma gibi işlemler için de kullanılıyor."
+            ]
+        },
+        {
+            "tag": "Ape in",
+            "responses": [
+                "Yeni bir NFT projesi satın almak anlamına geliyor. Ancak bu terim daha çok yeterince araştırma yapmadan yapılan satın alım işlemleri için kullanılıyor."
+            ]
+        },
+        {
+            "tag": "Balinalar",
+            "responses": [
+                "Çok fazla miktarda NFT, Bitcoin, Ethereum veya başka kripto para birimlerine sahip kişilere verilen isim."
+            ]
+        },
+        {
+            "tag": "Cüzdan",
+            "responses": [
+                "Kripto paralarınız için kullandığınız bir banka hesabı gibi düşünebilirsiniz cüzdanı. Nasıl ki gerçek hayatta bir sürü banka varsa, kripto dünyasınında da pek çok cüzdan var. Herhangi bir işlem yapmadan önce iyice araştırma yapmayı ihmal etmeyin!"
+            ]
+        },
+        {
+            "tag": "Delist",
+            "responses": [
+                "NFT’yi listeden çıkarmak, yani işlem yapılamaz hale getirmek anlamına geliyor. Peki, bu hangi durumlarda yapılır? Mesela NFT sahibi NFT’sinin ileride daha değerleneceğini düşünüp zamanı geldiğinde daha yüksek bir fiyata satmayı planlıyorsa."
+            ]
+        },
+        {
+            "tag": "DEX",
+            "responses": [
+                "Bu terim, yatırımcılar arasındaki ticarette herhangi bir aracı bulunmayan “merkeziyetsiz borsalar” için kullanılıyor."
+            ]
+        },
+        {
+            "tag": "Drop",
+            "responses": [
+                "Yeni bir ürünün çıktığını veya yakında çıkacağını anlatmak için kullanılan bir terim."
+            ]
+        },
+        {
+            "tag": "Elmas eller",
+            "responses": [
+                "Piyasada baskı veya yüksek volatilite olduğunda dahi sahip oldukları ürünleri satmayan insanlara verilen isim."
+            ]
+        },
+        {
+            "tag": "Gaz ücreti",
+            "responses": [
+                "Gaz ücretini geçiş ücreti gibi düşünebilirsiniz. Ethereum blockchain’de bir işlemi tamamlamak için ödediğiniz bu ücret, arz-talebe göre belirleniyor. Yani kaç kişinin işlem yapmaya çalıştığına bağlı... Eğer çok fazla insan Ethereum kullanyorsa, işinizin daha önce yapılması için madencilere (miner) daha çok ödeme yapmanız gerekiyor. Yani sırada öne geçmek için pamuk eller cebe!"
+            ]
+        },
+        {
+            "tag": "Likidite",
+            "responses": [
+                "NFT’nizin likiditesi yüksekse, muhtemelen kolayca bir alıcı bulacaksınız demektir."
+            ]
+        },
+        {
+            "tag": "mavi çip",
+            "responses": [
+                "Sabit, güçlü ve çok bililenen projelere “mavi çip” veya “mavi çipli NFT” deniyor. Larva Labs’in CryptoPunks’ı mavi çipe güzel bir örnek olarak verilebilir."
+            ]
+        },
+        {
+            "tag": "Mint etmek",
+            "responses": [
+                "Mint etmek, dijital verileri, blokchain’de kayıtlı dijital varlıklara dönüştürmek anlamına geliyor."
+            ]
+        },
+        {
+            "tag": "ytd",
+            "responses": [
+                "YTD, yani “Yatırım tavsiyesi değildir!”"
+            ]
+        },
+        {
+            "tag": "Token",
+            "responses": [
+                "Token'lar, blockchain’de NFT satışı karşılığında kripto para almak gibi işlemler yapmanıza olanak tanıyan varlıklardır."
+            ]
+        },
+        {
+            "tag": "Vergiler",
+            "responses": [
+                "Bitcoin herhangi bir yasal otoriteye bağlı olmayan bir para birimidir. Ortalama kullanımın önemi olmaksızın vergi yükümlülükleri sıklıkla oluşabilir. Bitcoin için farklı yasal sistemler içinde geniş çaplı mevzuatlarda, gelir vergisi, satış, sermaye geliri ve benzeri şekillerde görünen vergilendirme şekilleri ortaya çıkabilmektedir."
             ]
         }
     ]
